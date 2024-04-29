@@ -54,7 +54,7 @@
 
 <body id="cbody" onload="startCalc();" onkeyup="detectEvent(event);" onunload="stopcalc()" onclick="onclickBody()">
 
-    <div id="fcalc" name="calculator" action="*" onsubmit="return false;">
+    <form id="fcalc" name="calculator" action="*" onsubmit="return false;">
         <input value="0" type="hidden" name="expr" />
 
 
@@ -66,7 +66,7 @@
                 <h1 class="header">WWW.CALCWHIZ.COM</h1>
             </div>
 
-            <div class="row gap-2">
+            <div class="row gap-">
                 <div class="col-sm-7 col-md-7 col-lg-4 original">
                     <div class="boxclay" onclick="paskaFocus=0;">
                         <input value="0" type="text" size="10" onchange="this.value='';" id="foc" name="foc"
@@ -374,7 +374,6 @@
 
 
             <script language="javascript" type="text/javascript">
-
                 /* <![CDATA[ */
                 a = showDisplay();
                 mem = "";
@@ -407,7 +406,6 @@
                 document.getElementById('paska').style.height = (document.getElementById('ocalc').offsetHeight - 95) + "px";
                 document.calculator.foc.focus();
 
-
                 function downTxtPaskuChr() {
                     var content = document.getElementById("paska").value;
                     var filename = "notepad_content.txt";
@@ -428,12 +426,12 @@
                 }
 
                 function tiskniPasku() {
-    var content = document.getElementById("paska").value;
-    var printWindow = window.open('', '_blank');
-    printWindow.document.write('<html><head><title>Notepad Content</title></head><body><pre>' + content + '</pre></body></html>');
-    printWindow.document.close();
-    printWindow.print();
-}
+                    var content = document.getElementById("paska").value;
+                    var printWindow = window.open('', '_blank');
+                    printWindow.document.write('<html><head><title>Notepad Content</title></head><body><pre>' + content + '</pre></body></html>');
+                    printWindow.document.close();
+                    printWindow.print();
+                }
 
 
 
@@ -441,7 +439,6 @@
 
             <!-- numerino measurement v3 -->
             <script type="text/javascript">
-
                 var _sid = 36;
                 var _section = '';
             </script>
@@ -455,7 +452,7 @@
 
 
 
-    </div>
+    </form>
 
     <style type="text/css">
         .eu-cookies-panel {
