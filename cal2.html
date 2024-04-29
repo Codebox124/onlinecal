@@ -1,9 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <title>Online scientific calculator with tape - Scientific</title>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
     <meta http-equiv="Content-language" content="en" />
@@ -11,7 +13,7 @@
     <meta name="keywords" content="calculator, online calculator, advanced calculator" />
     <meta property="og:site_name" content="Online calculator" />
     <meta property="og:title" content="Online scientific calculator" />
-  
+
     <meta property="og:description" content="Calculator with basic and advanced mathematical functions" />
     <meta property="og:type" content="website" />
     <meta name="robots" content="all,index,follow" />
@@ -29,7 +31,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <!-- <script src="/bs/js/bootstrap.min.js"></script> -->
 
 
@@ -50,7 +54,7 @@
 
 <body id="cbody" onload="startCalc();" onkeyup="detectEvent(event);" onunload="stopcalc()" onclick="onclickBody()">
 
-    <form id="fcalc" name="calculator" action="*" onsubmit="return false;">
+    <div id="fcalc" name="calculator" action="*" onsubmit="return false;">
         <input value="0" type="hidden" name="expr" />
 
 
@@ -62,10 +66,11 @@
                 <h1 class="header">WWW.CALCWHIZ.COM</h1>
             </div>
 
-            <div class="row gap-5">
+            <div class="row gap-2">
                 <div class="col-sm-7 col-md-7 col-lg-4 original">
                     <div class="boxclay" onclick="paskaFocus=0;">
-                        <input value="0" type="text" size="10" onchange="this.value='';" id="foc" name="foc" class="hidfoc" />
+                        <input value="0" type="text" size="10" onchange="this.value='';" id="foc" name="foc"
+                            class="hidfoc" />
 
                         <div id="kuldiv">
 
@@ -73,23 +78,30 @@
                                 <table border="0" id="ocalc" class="tckey" cellspacing="0" cellpadding="0">
                                     <tr>
                                         <td class="top">
-                                            
-                                            <span id="owerinfo">&nbsp;</span><span id="kurzinfo">&nbsp;</span>&nbsp;&nbsp;<span id="meminfo">&nbsp;</span>
-                                            <div id="prb" title="size 3" class="prepbig prepsz hnd" onclick="zmenVelikost('0')">&nbsp;</div>
-                                            <div id="prs" title="size 2" class="prepmal prepsz hnd sellay" onclick="zmenVelikost('1')">&nbsp;</div>
-                                            <div id="prm" title="size 1" class="prepmin prepsz hnd" onclick="zmenVelikost('2')">&nbsp;</div>
+
+                                            <span id="owerinfo">&nbsp;</span><span
+                                                id="kurzinfo">&nbsp;</span>&nbsp;&nbsp;<span id="meminfo">&nbsp;</span>
+                                            <div id="prb" title="size 3" class="prepbig prepsz hnd"
+                                                onclick="zmenVelikost('0')">&nbsp;</div>
+                                            <div id="prs" title="size 2" class="prepmal prepsz hnd sellay"
+                                                onclick="zmenVelikost('1')">&nbsp;</div>
+                                            <div id="prm" title="size 1" class="prepmin prepsz hnd"
+                                                onclick="zmenVelikost('2')">&nbsp;</div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="divdisplay">
-                                                <input value="0" class="displaysum" type="text" name="exprdisplay" onclick="blur(this);document.calculator.foc.focus();" readonly="readonly" />
+                                                <input value="0" class="displaysum" type="text" name="exprdisplay"
+                                                    onclick="blur(this);document.calculator.foc.focus();"
+                                                    readonly="readonly" />
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="preppas"><a href="javaScript:void(0);" id="prepp" onclick="paskaHide();blur(this)">display tape</a></div>
+                                            <div class="preppas"><a href="javaScript:void(0);" id="prepp"
+                                                    onclick="paskaHide();blur(this)">display tape</a></div>
                                             <a href="./index.html">Standard</a>
                                         </td>
                                     </tr>
@@ -97,66 +109,85 @@
                                         <td id="advcalcbox" class="advbut ">
 
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Store exchange rate ( 1$ = x &euro; )" onclick="set_rate();blur(this)">rate</a>
+                                                <a href="#c" class="abtn0 zabtn"
+                                                    title="Store exchange rate ( 1$ = x &euro; )"
+                                                    onclick="set_rate();blur(this)">rate</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Convert on &euro; [Keyboard: E]" onclick="to_rate();blur(this)">&euro;</a>
+                                                <a href="#c" class="abtn0 zabtn" title="Convert on &euro; [Keyboard: E]"
+                                                    onclick="to_rate();blur(this)">&euro;</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Convert on $ [Keyboard: K]" onclick="from_rate();blur(this)">$</a>
+                                                <a href="#c" class="abtn0 zabtn" title="Convert on $ [Keyboard: K]"
+                                                    onclick="from_rate();blur(this)">$</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Square root of x" onclick="power('0.5');blur(this)">&radic;</a>
+                                                <a href="#c" class="abtn0 zabtn" title="Square root of x"
+                                                    onclick="power('0.5');blur(this)">&radic;</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="x raised to the power of y" onclick="power_m();blur(this)">x<sup>y</sup></a>
+                                                <a href="#c" class="abtn0 zabtn" title="x raised to the power of y"
+                                                    onclick="power_m();blur(this)">x<sup>y</sup></a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="x squared" onclick="power('2');blur(this)">x&sup2;</a>
+                                                <a href="#c" class="abtn0 zabtn" title="x squared"
+                                                    onclick="power('2');blur(this)">x&sup2;</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="arcsine of x" onclick="asin();blur(this)">asin</a>
-                                            </div>
-
-                                            <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="arcosine of x" onclick="acos();blur(this)">acos</a>
-                                            </div>
-
-                                            <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="arctan of x" onclick="atan();blur(this)">atan</a>
-                                            </div>
-
-
-
-                                            <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="10 raised to the power of x" onclick="power_x(10);blur(this)">10<sup>x</sup></a>
-                                            </div>
-
-
-                                            <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Natural logarithm of x" onclick="ln();blur(this)">ln</a>
-                                            </div>
-                                            <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Base-10 logarithm of x" onclick="log();blur(this)">log</a>
+                                                <a href="#c" class="abtn0 zabtn" title="arcsine of x"
+                                                    onclick="asin();blur(this)">asin</a>
                                             </div>
 
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Sine of x" onclick="sin();blur(this)">sin</a>
+                                                <a href="#c" class="abtn0 zabtn" title="arcosine of x"
+                                                    onclick="acos();blur(this)">acos</a>
+                                            </div>
+
+                                            <div class="btnx" onclick="btnDown(this);">
+                                                <a href="#c" class="abtn0 zabtn" title="arctan of x"
+                                                    onclick="atan();blur(this)">atan</a>
+                                            </div>
+
+
+
+                                            <div class="btnx" onclick="btnDown(this);">
+                                                <a href="#c" class="abtn0 zabtn" title="10 raised to the power of x"
+                                                    onclick="power_x(10);blur(this)">10<sup>x</sup></a>
+                                            </div>
+
+
+                                            <div class="btnx" onclick="btnDown(this);">
+                                                <a href="#c" class="abtn0 zabtn" title="Natural logarithm of x"
+                                                    onclick="ln();blur(this)">ln</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Cosine of x" onclick="cos();blur(this)">cos</a>
+                                                <a href="#c" class="abtn0 zabtn" title="Base-10 logarithm of x"
+                                                    onclick="log();blur(this)">log</a>
+                                            </div>
+
+                                            <div class="btnx" onclick="btnDown(this);">
+                                                <a href="#c" class="abtn0 zabtn" title="Sine of x"
+                                                    onclick="sin();blur(this)">sin</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Tangent of x" onclick="tan();blur(this)">tan</a>
+                                                <a href="#c" class="abtn0 zabtn" title="Cosine of x"
+                                                    onclick="cos();blur(this)">cos</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Multiplicative inverse" onclick="inv();blur(this)">1/x</a>
+                                                <a href="#c" class="abtn0 zabtn" title="Tangent of x"
+                                                    onclick="tan();blur(this)">tan</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="Ludolphine number" onclick="picko();blur(this)">&pi;</a>
+                                                <a href="#c" class="abtn0 zabtn" title="Multiplicative inverse"
+                                                    onclick="inv();blur(this)">1/x</a>
                                             </div>
                                             <div class="btnx" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn0 zabtn" title="x factorial" onclick="fac();blur(this)">x!</a>
+                                                <a href="#c" class="abtn0 zabtn" title="Ludolphine number"
+                                                    onclick="picko();blur(this)">&pi;</a>
+                                            </div>
+                                            <div class="btnx" onclick="btnDown(this);">
+                                                <a href="#c" class="abtn0 zabtn" title="x factorial"
+                                                    onclick="fac();blur(this)">x!</a>
                                             </div>
 
                                         </td>
@@ -165,24 +196,27 @@
                                         <td class="zbut ">
 
                                             <div class="btnplain">
-                                                <div class="zaos">round<br/>
-                                                    <select name="desmis" size="1" class="selzao" title="rounding decimal numbers" onfocus="seldesmis=1;" onblur="seldesmis=0;" onchange="onChangeRound();blur(this);document.calculator.foc.focus();">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3" selected="selected">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-													<option value="6">6</option>
-													<option value="7">7</option>
-													<option value="8">8</option>
-													<option value="9">9</option>
-													<option value="10">10</option>
-													<option value="11">11</option>
-													<option value="12">12</option>
-													<option value="13">13</option>
-													<option value="14">14</option>
-												</select>
+                                                <div class="zaos">round<br />
+                                                    <select name="desmis" size="1" class="selzao"
+                                                        title="rounding decimal numbers" onfocus="seldesmis=1;"
+                                                        onblur="seldesmis=0;"
+                                                        onchange="onChangeRound();blur(this);document.calculator.foc.focus();">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3" selected="selected">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                    </select>
                                                 </div>
                                             </div>
 
@@ -194,28 +228,37 @@
                                                 <a href="#c" class="abtn2 zabtn" onclick="enter(')');blur(this)">)</a>
                                             </div>
                                             <div class="btnmar  btn8" id="" onclick="btnDown(this);">
-                                                <a style="background-color: #E68747;" href="#c" class="abtn2  " title="Backspace" onclick="zrusPosledniZnak();blur(this)"><span class="bdel">DEL</span></a>
+                                                <a style="background-color: #E68747;" href="#c" class="abtn2  "
+                                                    title="Backspace" onclick="zrusPosledniZnak();blur(this)"><span
+                                                        class="bdel">DEL</span></a>
                                             </div>
                                             <div class="btnmar btn6" id="btn27" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn6 zabtn" title="delete display" onclick="clearDisplay();blur(this)">C</a>
+                                                <a href="#c" class="abtn6 zabtn" title="delete display"
+                                                    onclick="clearDisplay();blur(this)">C</a>
                                             </div>
                                             <div class="btnmar btn2" id="btn80" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn2 zabtn" title="add x to memory" onclick="plus_mem();blur(this)">M+</a>
+                                                <a href="#c" class="abtn2 zabtn" title="add x to memory"
+                                                    onclick="plus_mem();blur(this)">M+</a>
                                             </div>
 
                                             <div class="btnmar btn2" id="btn73" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn2 zabtn" title="subtract x from memory" onclick="minus_mem();blur(this)">M-</a>
+                                                <a href="#c" class="abtn2 zabtn" title="subtract x from memory"
+                                                    onclick="minus_mem();blur(this)">M-</a>
                                             </div>
                                             <div class="btnmar btn2" id="btn82" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn2 zabtn" title="recall memory" onclick="pop_mem();blur(this)">MR</a>
+                                                <a href="#c" class="abtn2 zabtn" title="recall memory"
+                                                    onclick="pop_mem();blur(this)">MR</a>
                                             </div>
 
                                             <div class="btnmar btn2" id="btn83" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn2 zabtn" title="store x in memory (previous memory content is deleted)" onclick="push_mem();blur(this)">MS</a>
+                                                <a href="#c" class="abtn2 zabtn"
+                                                    title="store x in memory (previous memory content is deleted)"
+                                                    onclick="push_mem();blur(this)">MS</a>
                                             </div>
 
                                             <div class="btnmar btn2" id="btn67" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn2 zabtn" title="clear memory" onclick="clear_mem();blur(this)">MC</a>
+                                                <a href="#c" class="abtn2 zabtn" title="clear memory"
+                                                    onclick="clear_mem();blur(this)">MC</a>
                                             </div>
                                             <div class="btnmar btn2" id="btn103" onclick="btnDown(this);">
                                                 <a href="#c" class="abtn2 zabtn" onclick="enter(7);blur(this)">7</a>
@@ -227,10 +270,12 @@
                                                 <a href="#c" class="abtn2 zabtn" onclick="enter(9);blur(this)">9</a>
                                             </div>
                                             <div class="btnmar btn1" id="btn111" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn1 zabtn" onclick="enter('/');blur(this)">&divide;</a>
+                                                <a href="#c" class="abtn1 zabtn"
+                                                    onclick="enter('/');blur(this)">&divide;</a>
                                             </div>
                                             <div class="btnmar btn2" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn2 zabtn" onclick="prcnt();lastKey=13;blur(this);">%</a>
+                                                <a href="#c" class="abtn2 zabtn"
+                                                    onclick="prcnt();lastKey=13;blur(this);">%</a>
                                             </div>
                                             <div class="btnmar btn2" id="btn100" onclick="btnDown(this);">
                                                 <a href="#c" class="abtn2 zabtn" onclick="enter(4);blur(this)">4</a>
@@ -242,7 +287,8 @@
                                                 <a href="#c" class="abtn2 zabtn" onclick="enter(6);blur(this)">6</a>
                                             </div>
                                             <div class="btnmar btn1" id="btn106" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn1 zabtn" onclick="enter('*');blur(this)">&times;</a>
+                                                <a href="#c" class="abtn1 zabtn"
+                                                    onclick="enter('*');blur(this)">&times;</a>
                                             </div>
                                             <div class="btnmar btn2" onclick="btnDown(this);">
                                                 <a href="#c" class="abtn2 zabtn" onclick="enter('e');blur(this)">exp</a>
@@ -266,10 +312,12 @@
                                                 <a href="#c" class="abtn2 zabtn" onclick="enter(0);blur(this)">0</a>
                                             </div>
                                             <div class="btnmar btn2" id="btn110" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn2 zabtn" onclick="enter('.');blur(this)">&middot;</a>
+                                                <a href="#c" class="abtn2 zabtn"
+                                                    onclick="enter('.');blur(this)">&middot;</a>
                                             </div>
                                             <div class="btnmar btn2" id="btn13" onclick="btnDown(this);">
-                                                <a href="#c" class="abtn2 zabtn" onclick="calc();newCalc=1;blur(this)">=</a>
+                                                <a href="#c" class="abtn2 zabtn"
+                                                    onclick="calc();newCalc=1;blur(this)">=</a>
                                             </div>
                                             <div class="btnmar btn3p" id="btn107" onclick="btnDown(this);">
                                                 <a href="#c" class="abtn3p zabtn" onclick="enter('+');blur(this)">+</a>
@@ -292,19 +340,29 @@
                     <div id="paskabox">
                         <div class="paskaBox ">
                             <div class="paskaRam">
-                                <div class="brdpaska_chrome"><input class="d_display" type="text" name="datewatch" /></div>
+                                <div class="brdpaska_chrome"><input class="d_display" type="text" name="datewatch" />
+                                </div>
 
-                                <textarea class="paskatxt" id="paska" rows="" cols="" onclick="paskaOnClick()"> </textarea>
+                                <textarea class="paskatxt" id="paska" rows="" cols=""
+                                    onclick="paskaOnClick()"> </textarea>
                             </div>
                             <div class="paskapata"></div>
                         </div>
 
                         <div style="width: 250px; margin: 0 auto">
-                            <div class="prn fll" id="btnedit"><img src="/pict/b1_en.gif" alt="edit tape" class="btnpas" title="edit tape" onclick="editujPasku();blur(this)" /></div>
-                            <div class="prn male5 fll" id="btnsv"><img src="/pict/b1s_en.gif" alt="edit tape" class="btnpas" title="edit tape" onclick="ulozPasku();blur(this)" /></div>
-                            <div class="prn male5 fll"><img src="/pict/b3_en.gif" alt="download as *.txt file" class="btnpas" title="download as *.txt file" onclick="downTxtPaskuChr();blur(this)" /></div>
-                            <div class="prn male5 fll"><img src="/pict/b2_en.gif" alt="erase contents of tape" class="btnpas" title="erase contents of tape" onclick="smazPasku();blur(this)" /></div>
-                            <div class="prn male5 fll"><img src="/pict/b4_en.gif" alt="print tape" class="btnpas" title="print tape" onclick="tiskniPasku();blur(this)" /></div>
+                            <div class="prn fll" id="btnedit"><img src="/pict/b1_en.gif" alt="edit tape" class="btnpas"
+                                    title="edit tape" onclick="editujPasku();blur(this)" /></div>
+                            <div class="prn male5 fll" id="btnsv"><img src="/pict/b1s_en.gif" alt="edit tape"
+                                    class="btnpas" title="edit tape" onclick="ulozPasku();blur(this)" /></div>
+                            <div class="prn male5 fll">
+                                <img src="/pict/b3_en.gif" alt="download as *.txt file" class="btnpas"
+                                    title="download as *.txt file" onclick="downTxtPaskuChr();blur(this)" />
+                            </div>
+                            <div class="prn male5 fll"><img src="/pict/b2_en.gif" alt="erase contents of tape"
+                                    class="btnpas" title="erase contents of tape" onclick="smazPasku();blur(this)" />
+                            </div>
+                            <div class="prn male5 fll"><img src="/pict/b4_en.gif" alt="print tape" class="btnpas"
+                                    title="print tape" onclick="tiskniPasku();blur(this)" /></div>
 
                         </div>
                     </div>
@@ -316,6 +374,7 @@
 
 
             <script language="javascript" type="text/javascript">
+
                 /* <![CDATA[ */
                 a = showDisplay();
                 mem = "";
@@ -347,11 +406,42 @@
 
                 document.getElementById('paska').style.height = (document.getElementById('ocalc').offsetHeight - 95) + "px";
                 document.calculator.foc.focus();
-                /* ]]> */
+
+
+                function downTxtPaskuChr() {
+                    var content = document.getElementById("paska").value;
+                    var filename = "notepad_content.txt";
+                    var blob = new Blob([content], { type: 'text/plain' });
+
+                    if (window.navigator.msSaveOrOpenBlob) {
+                        window.navigator.msSaveBlob(blob, filename);
+                    } else {
+                        var elem = window.document.createElement('a');
+                        elem.href = window.URL.createObjectURL(blob);
+                        elem.download = filename;
+                        document.body.appendChild(elem);
+                        elem.click();
+                        document.body.removeChild(elem);
+                    }
+
+
+                }
+
+                function tiskniPasku() {
+    var content = document.getElementById("paska").value;
+    var printWindow = window.open('', '_blank');
+    printWindow.document.write('<html><head><title>Notepad Content</title></head><body><pre>' + content + '</pre></body></html>');
+    printWindow.document.close();
+    printWindow.print();
+}
+
+
+
             </script>
 
             <!-- numerino measurement v3 -->
             <script type="text/javascript">
+
                 var _sid = 36;
                 var _section = '';
             </script>
@@ -365,7 +455,7 @@
 
 
 
-    </form>
+    </div>
 
     <style type="text/css">
         .eu-cookies-panel {
@@ -406,7 +496,7 @@
     <script>
         $('.eu-cookies-panel').html('Tento web používá k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookie. Používáním tohoto webu s tím souhlasíte. <a href=\"/cookie-info.php\">Více informací</a> <button>Beru na vědomí</button>');
         $('.eu-cookies-big').html('<button>Beru na vědomí</button>');
-        $('.eu-cookies button').click(function() {
+        $('.eu-cookies button').click(function () {
             var date = new Date();
             date.setFullYear(date.getFullYear() + 10);
             document.cookie = 'eu-cookies=1; path=/; expires=' + date.toGMTString();
