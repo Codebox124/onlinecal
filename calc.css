@@ -344,7 +344,7 @@ TABLE.thlp {
     margin: 10px 0px 0px 0px;
     text-align: right;
     border: 0px solid red;
-    background: url('/pict/note_bkg.gif?2') top no-repeat #fff;
+    background: url('/pict/note_bkg.gif') top no-repeat #fff;
 }
 
 .paskaHdr {
@@ -383,7 +383,7 @@ TABLE.thlp {
     line-height: 16px;
     border: 0px;
     background-color: #fffce2;
-    background: url('/pict/note_bkg_txt.gif?4') top no-repeat #fff;
+    background: url('/pict/note_bkg_txt.gif') top no-repeat #fff;
 }
 
 .paskaBox .prn {
