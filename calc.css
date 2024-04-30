@@ -3,6 +3,7 @@ td,
 div {
     font-family: Arial, Tahoma, Verdana, sans-serif;
     font-size: 14px;
+    
 }
 
 p,
@@ -368,6 +369,11 @@ TABLE.thlp {
     font-size: 13px;
     width: 250px;
     line-height: 16px;
+}
+
+.cont22{
+    display: flex;
+    align-items: center;
 }
 
 .paskatxt {
