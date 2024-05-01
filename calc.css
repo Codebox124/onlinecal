@@ -333,9 +333,9 @@ TABLE.thlp {
 
 .d_display {
     border: 0px;
-    background-color: #FFFCDF;
+    background-color: #c8c6c6c2;
     width: 150px;
-    color: #91C8FF;
+    color: #000000;
     padding: 0px;
     font-size: 12px;
 }
@@ -344,7 +344,7 @@ TABLE.thlp {
     margin: 10px 0px 0px 0px;
     text-align: right;
     border: 0px solid red;
-    background: url('/pict/note_bkg.gif') top no-repeat #fff;
+    background: url('/pict/note_bkg\ -\ Copy.gif') top no-repeat #fff;
 }
 
 .paskaHdr {
@@ -383,7 +383,7 @@ TABLE.thlp {
     line-height: 16px;
     border: 0px;
     background-color: #fffce2;
-    background: url('/pict/note_bkg_txt.gif') top no-repeat #fff;
+    background: url('/pict/note_bkg_txt\ -\ Copy.gif') top no-repeat #fff;
 }
 
 .paskaBox .prn {
@@ -395,8 +395,9 @@ TABLE.thlp {
 .paskapata {
     height: 33px;
     margin: 0px 0px 0px 0px;
-    background: url('/pict/bkg_note_pata.gif?4') top no-repeat #fff;
-    border: 0px solid red
+    background: url('/pict/bkg_note_pata\ -\ Copy.gif') top no-repeat #fff;
+    border: 0px solid red;
+    
 }
 
 .btnpas {
