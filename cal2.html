@@ -100,8 +100,8 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="preppas"><a href="javaScript:void(0);" id="prepp"
-                                                    onclick="paskaHide();blur(this)">display tape</a></div>
+                                            <!-- <div class="preppas"><a href="javaScript:void(0);" id="prepp"
+                                                    onclick="paskaHide();blur(this)">Hide tape</a></div> -->
                                             <a href="./index.html">Standard</a>
                                         </td>
                                     </tr>
@@ -335,21 +335,18 @@
                     </div>
                 </div>
 
-
-                <div style="margin-left: 50px;" class="col-sm-5  col-md-4 col-lg-4 notepad">
-                    <div id="paskabox " class="cont22">
-                        <div class="paskaBox ">
-                            <div class="paskaRam">
-                                <div class="brdpaska_chrome"><input class="d_display" type="text" name="datewatch" />
-                                </div>
-
-                                <textarea class="paskatxt" id="paska" rows="" cols=""
-                                    onclick="paskaOnClick()"> </textarea>
-                            </div>
-                            <div class="paskapata"></div>
+                <div class="col-sm-5 col-md-4 col-lg-4"> 
+                    <div id="paskabox"> 
+                        <div class="paskaBox "> 
+                            <div class="paskaRam"> 
+                                <div class="brdpaska_chrome"><input class="d_display" type="text" name="datewatch" /></div> 
+ 
+                                <textarea class="paskatxt" id="paska" rows="" cols="" onclick="paskaOnClick()"> </textarea> 
+                            </div> 
+                            <div class="paskapata"></div> 
                         </div>
 
-                        <div style=" margin: 0 auto; display: flex; flex-direction: column; gap: 7px;">
+                        <div style=" margin: 0 auto; margin-top: 95px; display: flex; flex-direction: column; gap: 7px;">
                             <div style="margin-left: 6px;" class="prn fll" id="btnedit"><img src="/pict/edt-removebg-preview.png" alt="edit tape" width="50" class="btnpas"
                                 title="edit tape" onclick="editujPasku();blur(this)" /></div>
                                 <div class="prn male5 fll" id="btnsv"><img src="/pict/Save_Icons_Icon_Set-removebg-preview.png" alt="edit tape" width="50"
@@ -389,9 +386,14 @@
                     document.getElementById('prepc').innerHTML = preloz("vědecká kalkulačka");
                 }
                 if (advPaska == 1) {
-                    document.getElementById('paskabox').style.display = 'block';
+                    document.getElementById('paskabox').style.display = 'flex';
                     //document.getElementById('paskaboxbtn').style.display='block';
                     document.getElementById('prepp').innerHTML = preloz("skrýt pásku");
+                }
+                else { document.getElementById('paskabox').style.display = 'none';
+                    //document.getElementById('paskaboxbtn').style.display='block';
+                    document.getElementById('prepp').innerHTML = preloz("zobrazit pásku");
+
                 }
                 var seldes = document.calculator.desmis.length;
                 for (i = 0; i < seldes; i++) {
@@ -399,6 +401,8 @@
                         document.calculator.desmis.selectedIndex = i;
                     }
                 }
+
+
                 document.getElementById('thlp').style.display = 'block';
                 document.getElementById('thlpkz').style.display = 'block';
                 document.getElementById('thlpkzm').style.display = 'block';

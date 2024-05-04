@@ -347,6 +347,10 @@ TABLE.thlp {
     background: url('/pict/note_bkg\ -\ Copy.gif') top no-repeat #fff;
 }
 
+#paskabox {
+    margin: 0 auto; display: flex; flex-direction: row; gap: 7px;
+}
+
 .paskaHdr {
     margin: 0px 0px 0px 0px;
     height: 20px;
